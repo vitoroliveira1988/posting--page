@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posting Page | API Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FakeBook Post Manager</h1>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <form id="post-form">
+                <div class="input-group">
+                    <label for="titulo">Título do Post</label>
+                    <input type="text" id="titulo" placeholder="Dê um título incrível..." required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="conteudo">Conteúdo</label>
+                    <textarea id="conteudo" rows="5" placeholder="O que você está pensando?" required></textarea>
+                </div>
+
+                <button type="submit" id="btn-postar">Postar Agora</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="render-container">
+            <h3>Visualização do Post Retornado:</h3>
+            <article id="post-renderizado" class="post-card">
+                <h2 id="renderizador-titulo">O título aparecerá aqui...</h2>
+                <p id="renderizador-conteudo">O conteúdo do post aparecerá aqui após o envio.</p>
+                <small id="status-envio"></small>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto de Integração com API JSONPlaceholder</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
